@@ -32,41 +32,34 @@ const Navbar = () => {
               <img src="/assets/kbj_logo.png" alt="Logo" className="w-[12rem] h-auto" />
             </a>
           </div>
-          
           <div className="hidden md:flex space-x-6">
-  {navbar_items.map((item, index) =>
-    item.name === "Contact Us" ? (
-      // Special "Contact Us" Button
-      <a
-        key={index}
-        href={item.link}
-        className="px-6 py-2 text-lg font-semibold text-white bg-gradient-to-r from-[#6d28d9] to-[#a855f7] 
-        rounded-lg shadow-lg transition-all duration-300 transform 
-        hover:shadow-xl hover:-translate-y-1 hover:scale-105 hover:from-[#5b21b6] hover:to-[#9333ea]"
-      >
-        {item.name}
-      </a>
-    ) : (
-      // Normal Navbar Items
-      <a
-        key={index}
-        href={item.link}
-        className="relative text-[#1e3a8a] px-5 py-2 text-lg font-medium transition-all duration-300 
-        hover:text-[#3b82f6] hover:-translate-y-1 hover:scale-105 group 
-        hover:shadow-md hover:shadow-blue-500"
-      >
-        {item.name}
-        <span className="absolute left-0 bottom-0 w-0 h-1 bg-gradient-to-r from-[#1e3a8a] to-[#3b82f6] transition-all duration-300 group-hover:w-full rounded-full"></span>
-      </a>
-    )
-  )}
-</div>
-
-
-
-
-
-          
+            {navbar_items.map((item, index) =>
+              item.name === "Contact Us" ? (
+                // Special "Contact Us" Button
+                <a
+                  key={index}
+                  href={item.link}
+                  className="px-6 py-2 text-lg font-semibold text-white bg-gradient-to-r from-[#6d28d9] to-[#a855f7] 
+                  rounded-lg shadow-lg transition-all duration-300 transform 
+                  hover:shadow-xl hover:-translate-y-1 hover:scale-105 hover:from-[#5b21b6] hover:to-[#9333ea]"
+                >
+                  {item.name}
+                </a>
+              ) : (
+                // Normal Navbar Items
+                <a
+                  key={index}
+                  href={item.link}
+                  className="relative text-[#1e3a8a] px-5 py-2 text-lg font-medium transition-all duration-300 
+                  hover:text-[#3b82f6] hover:-translate-y-1 hover:scale-105 group 
+                  hover:shadow-md hover:shadow-blue-500"
+                >
+                  {item.name}
+                  <span className="absolute left-0 bottom-0 w-0 h-1 bg-gradient-to-r from-[#1e3a8a] to-[#3b82f6] transition-all duration-300 group-hover:w-full rounded-full"></span>
+                </a>
+              )
+            )}
+          </div>
           <div className="md:hidden">
             <button onClick={toggleMenu} className="text-gray-800 hover:text-blue-600 p-2 rounded-md focus:outline-none">
               {isOpen ? <FaTimes className="h-6 w-6" /> : <FaBars className="h-6 w-6" />}

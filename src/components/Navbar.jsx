@@ -26,10 +26,10 @@ const Navbar = () => {
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-gradient-to-r from-white via-gray-100 to-gray-300 shadow-xl' : 'bg-gradient-to-r from-white via-gray-100 to-gray-300 shadow-md'}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-[5rem]">
           <div className="flex items-center">
             <a href="#" className="text-2xl font-bold text-gray-800">
-              <img src="/assets/kbj_logo.png" alt="Logo" className="w-[12rem] h-auto" />
+              <img src="/assets/kbj_logo.png" alt="Logo" className="w-[5rem] h-auto" />
             </a>
           </div>
           <div className="hidden md:flex space-x-6">

@@ -15,12 +15,12 @@ const Navbar = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const navbar_items = [
-    { name: 'Home', link: '#' },
-    { name: 'About Us', link: '#about' },
-    { name: 'Services', link: '#services' },
-    { name: 'Sectors', link: '#sectors' },
-    { name: 'Careers', link: '#careers' },
-    { name: 'Contact Us', link: '#contact' }
+    { name: 'Home', link: '/' },
+    { name: 'About Us', link: '/about' },
+    { name: 'Services', link: '/services' },
+    { name: 'Sectors', link: '/sectors' },
+    { name: 'Careers', link: '/careers' },
+    { name: 'Contact Us', link: '/contact' }
   ];
 
   return (
@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-[5rem]">
           <div className="flex items-center">
-            <a href="#" className="text-2xl font-bold text-gray-800">
+            <a href="/" className="text-2xl font-bold text-gray-800">
               <img src="/assets/kbj_logo.png" alt="Logo" className="w-[5rem] h-auto" />
             </a>
           </div>

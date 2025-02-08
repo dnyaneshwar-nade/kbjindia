@@ -1,44 +1,24 @@
 import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
-
-import Navbar from "./Navbar";
-import Hero from "./Hero";
-import About from "./About";
-import Services from "./Services";
-import WhyChooseUs from "./WhyChooseUs";
-import Testimonials from "./Testimonials";
-import Footer from "./Footer";
+import Hero from "./Home/Hero";
+import About from "./Home/About";
+import Services from "./Home/Services";
+import WhyChooseUs from "./Home/WhyChooseUs";
+import Testimonials from "./Home/Testimonials";
 
 function Home() {
-  const [tiltYes, setTiltYes] = useState(true);
-
   useEffect(() => {
-    const handleResize = () => {
-      setTiltYes(window.innerWidth > 700);
-    };
-
-    window.addEventListener("resize", handleResize);
-    handleResize(); // Initial check
-
-    return () => window.removeEventListener("resize", handleResize);
+    document.title = "Home - KBJ";
   }, []);
 
   return (
-    <motion.div
-      className="Home"
-      initial={{ opacity: 0, transition: { duration: 0.75, ease: "easeOut" } }}
-      animate={{ opacity: 1, transition: { duration: 0.75, ease: "easeOut" } }}
-      exit={{ opacity: 0, transition: { duration: 0.75, ease: "easeOut" } }}
-    >
-      {/* Add your components here */}
-      <Navbar />
+    <>
       <Hero />
       <About />
       <Services />
       <WhyChooseUs />
       <Testimonials />
-      <Footer />
-    </motion.div>
+    
+    </>
   );
 }
 

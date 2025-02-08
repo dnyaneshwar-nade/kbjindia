@@ -12,7 +12,7 @@ const ServiceCard = ({ icon, title, description, learnMore }) => {
       <a 
         href={learnMore} 
         className="absolute bottom-4 left-1/2 transform -translate-x-1/2 px-6 py-2 text-white font-semibold rounded-full transition duration-300 
-        bg-gradient-to-r from-blue-500 to-purple-600 shadow-lg hover:scale-110 hover:shadow-2xl hover:from-purple-600 hover:to-blue-500"
+        bg-gradient-to-r from-blue-800 to-blue-500 shadow-lg hover:scale-110 hover:shadow-2xl hover:from-purple-600 hover:to-blue-500"
       >
         Learn More →
       </a>

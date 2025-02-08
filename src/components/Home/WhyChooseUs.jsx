@@ -6,7 +6,7 @@ const FeatureItem = ({ icon, title, description }) => {
     <div
       className="flex flex-col items-center justify-center p-6 bg-white rounded-xl shadow-xl hover:shadow-2xl transition duration-300 ease-in-out transform hover:-translate-y-2 hover:scale-105"
     >
-      <div className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 p-4 rounded-full mb-4 shadow-lg">
+      <div className="bg-gradient-to-r from-blue-800 via-blue-600 to-blue-500 p-4 rounded-full mb-4 shadow-lg">
         <div className="text-white">{icon}</div>
       </div>
       <h3 className="text-2xl font-semibold text-gray-800 mb-2">{title}</h3>

@@ -37,11 +37,11 @@ const Navbar = () => {
               item.name === "Contact Us" ? (
                 // Special "Contact Us" Button
                 <a
-                  key={index}
+                  key={index} 
                   href={item.link}
-                  className="px-6 py-2 text-lg font-semibold text-white bg-gradient-to-r from-[#6d28d9] to-[#a855f7] 
+                  className="px-6 py-2 text-lg font-semibold text-white bg-gradient-to-r from-[#1e3a8a] to-[#3b82f6] 
                   rounded-lg shadow-lg transition-all duration-300 transform 
-                  hover:shadow-xl hover:-translate-y-1 hover:scale-105 hover:from-[#5b21b6] hover:to-[#9333ea]"
+                  hover:shadow-xl hover:-translate-y-1 hover:scale-105 hover:from-shadow-blue-500 hover:to-shadow-blue-500"
                 >
                   {item.name}
                 </a>

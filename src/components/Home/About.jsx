@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const About = () => {
   return (
     <motion.section
-      className="py-20 bg-gradient-to-r from-blue-500 to-purple-600 text-white"
+      className="py-20 bg-gradient-to-r from-blue-800 to-blue-500 text-white"
       id="about"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}

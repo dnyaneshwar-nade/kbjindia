@@ -44,7 +44,7 @@ function ContactUs() {
     <div className="pt-28 pb-20 bg-gray-100 min-h-screen flex items-center justify-center">
       <div className="max-w-3xl w-full bg-gray shadow-2xl rounded-lg p-8 md:p-12">
         {/* Header Section */}
-        <h2 className="text-4xl font-bold text-center text-indigo-600">
+        <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-blue-500 text-center">
           Get In Touch Today
         </h2>
         <p className="text-gray-700 text-center mt-2">
@@ -155,7 +155,7 @@ function ContactUs() {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full md:col-span-2 bg-indigo-600 text-white p-3 rounded-lg hover:bg-indigo-700 transition duration-300"
+            className="w-full md:col-span-2 bg-gradient-to-r from-blue-800 to-blue-500 text-white p-3 rounded-lg hover:bg-gradient-to-r from-blue-800 to-blue-500 transition duration-300"
           >
             Get Started
           </button>

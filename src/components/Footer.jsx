@@ -52,10 +52,19 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition duration-300"><FaFacebookF /></a>
-              <a href="#" className="text-gray-400 hover:text-white transition duration-300"><FaTwitter /></a>
-              <a href="#" className="text-gray-400 hover:text-white transition duration-300"><FaLinkedinIn /></a>
-              <a href="#" className="text-gray-400 hover:text-white transition duration-300"><FaInstagram /></a>
+              <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 text-gray-400 hover:bg-blue-500 hover:text-white transition duration-300">
+                <FaFacebookF />
+              </a>
+              <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 text-gray-400 hover:bg-blue-400 hover:text-white transition duration-300">
+                <FaTwitter />
+              </a>
+              <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 text-gray-400 hover:bg-blue-600 hover:text-white transition duration-300">
+                <FaLinkedinIn />
+              </a>
+              <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 text-gray-400 hover:bg-pink-500 hover:text-white transition duration-300">
+                <FaInstagram />
+              </a>
+
             </div>
           </div>
         </div>

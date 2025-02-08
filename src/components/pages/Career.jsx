@@ -2,22 +2,22 @@ import React from "react";
 
 const Career = () => {
   return (
-    <section className="bg-white py-12 px-6">
+    <section className="bg-white py-20 px-0">
       {/* Career Image Section */}
-      <div className="mx-auto w-full h-auto">
+        <div className="mx-auto w-full h-auto bg-blue-50 py-12 px-4">
             <img
-                src="/assets/career_banner.jpg" // Change this to your actual image path
+                src="/assets/career.png" // Change this to your actual image path
                 alt="Join Our Team"
                 className="w-full h-48 object-cover rounded-lg shadow-lg"
             />
-            <h2 className="text-3xl font-bold text-gray-800 mt-6 text-center">Join Our Team</h2>
-            <p className="text-gray-600 mt-2 text-center">
-                See what it’s like to be a part of <b>KBJ India Pvt Ltd®</b>, a team built on creating and delivering 
+            <h2 className="text-4xl font-extrabold text-blue-800 mt-6 text-center">
+                Join Our Team
+            </h2>
+            <p className="text-gray-700 mt-4 text-center max-w-2xl mx-auto leading-relaxed">
+                See what it’s like to be a part of <b>KBJ India Pvt Ltd®</b>, a team built on creating and delivering  
                 innovative solutions and services for businesses.
             </p>
         </div>
-
-
       {/* Career Form Section */}
       <div className="max-w-3xl mx-auto bg-gray-100 p-8 shadow-lg rounded-lg mt-8">
         <h3 className="text-2xl font-semibold text-gray-800 mb-6 text-center">
@@ -57,7 +57,7 @@ const Career = () => {
             </div>
           </div>
 
-          <button type="submit" className="w-full bg-blue-600 text-white py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition">
+          <button type="submit" className="w-full bg-gradient-to-r from-blue-800 to-blue-500  text-white py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition">
             Submit Application
           </button>
         </form>

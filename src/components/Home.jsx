@@ -17,7 +17,6 @@ function Home() {
       <Services />
       <WhyChooseUs />
       <Testimonials />
-    
     </>
   );
 }

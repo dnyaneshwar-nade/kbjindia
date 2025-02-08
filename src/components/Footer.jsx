@@ -21,7 +21,7 @@ const Footer = () => {
                 <img src="/assets/kbj_logo.png" alt="Logo" className="w-32 h-auto" />
               </a>
             </h3>
-            <p className="text-gray-400">Empowering businesses with innovative solutions.</p>
+            <p className="text-gray-400">Sathi Hath Badhana.</p>
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>

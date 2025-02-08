@@ -6,10 +6,13 @@ import Services from './components/Services';
 import WhyChooseUs from './components/WhyChooseUs';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <div className="font-sans">
+
+      <ScrollToTop />
       <Navbar />
       <Hero />
       <About />
